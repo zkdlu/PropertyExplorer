@@ -6,11 +6,13 @@ namespace PropertyExplorer.Models
 {
     public class Property
     {
-        public string Name { get; set; }
+        
     }
     
     public class Property<T> : Property
     {
+        public string Name { get; set; }
+
         private Func<T> getter;
         private Action<T> setter;
 
